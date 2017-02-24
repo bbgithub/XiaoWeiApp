@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  
+//
+//  Created by 物恋网 on 16/6/20.
+//
+//
+
+#ifdef DEBUG
+#define SDKLOG(fmt,...)     NSLog(fmt,##__VA_ARGS__)
+#else
+#define SDKLOG(fmt,...)
+#endif
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <UIKit/UIKit.h>
+#import "WlwHelp.h"
+#import "OpenUDID.h"
+#import "AppData.h"
+#import "UserModel.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define SERVERURL  @"https://192.168.200.165:8878/api/v1"
+#define IMGURLPREFIX  @"http://7xwabt.com1.z0.glb.clouddn.com/"
+
+//#define SERVERURL  @"http://60.205.124.182:8877/api/v1"
+#endif /* PrefixHeader_pch */
